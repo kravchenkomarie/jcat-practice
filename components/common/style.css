@@ -111,9 +111,9 @@ ul, li {
     padding: 5px;
 }
 
-.fa-ellipsis {
-    font-size: 24px;
-    color: #5C5F62;
+.team__card-item > i.fa-ellipsis {
+    font-size: 23px;
+    color: var(--text-color);
     position: absolute;
     top: 7%;
     left: 80%;
@@ -144,41 +144,109 @@ ul, li {
     margin-top: 14px;
 }
 
-.chat__page {
+.chat__page, .news__item {
     position: relative;
     display: flex;
     align-items: center;
     margin-top: 30px;
 }
 
-.chat__page-avatar > img {
+.chat__page-avatar > img, .news__item-avatar > img {
     position: relative;
     height: 40px;
     min-width: 40px;
     border-radius: 50%;
 }
 
-.chat__page-info {
+.chat__page-info, .news__item-info {
     flex: 10;
     margin-left: 13px;
 }
 
-.chat-info > h2 {
+.chat-info > h2, .news__item-info > h2 {
     padding-bottom: 5px;
 }
 
-.chat__page-info p {
+.chat__page-info p, .news__item-info p {
     font-size: 13px;
     line-height: 20px;
-    color: #5C5F62;
+    color: var(--text-color);
 }
 
 .chat__page-time p {
     font-size: 13px;
     margin-top: -21px;
-    color: #5C5F62;
+    color: var(--text-color);
+}
+
+/*Conversation (end)*/
+
+
+
+/*Announcements (start)*/
+
+.news__item {
+    margin-top: 20px;
+}
+
+.news__page {
+    width: 500px;
+    height: 440px;
+    padding: 20px 25px;
+}
+
+.news__title {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.news__text {
+    color: var(--text-color);
+    padding-top: 7px;
+}
+
+.news__meatball > i.fa-ellipsis {
+    font-size: 24px;
+    color: var(--text-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.news__item-title {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.news__item-text {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text-color);
+    line-height: 20px;
+}
+
+.news__item-text > span.at {
+   font-size: 20px;
+    padding: 0 5px 0 12px;
+}
+
+.news__item-text > span.name {
+    color: #6F47EB;
+}
+
+.news__item-text > i {
+    padding: 0 5px;
+    font-size: 15px;
+}
+
+.thin {
+    font-weight: 400;
+}
+
+.features {
+    padding: 0 30px;
 }
 
 
-
-/*Conversation (end)*/
+/*Announcements (end)*/
