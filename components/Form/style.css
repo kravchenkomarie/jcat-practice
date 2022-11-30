@@ -1,0 +1,7 @@
+@import url(../common/style.css);
+
+.wrapper {
+    width: 472px;
+    height: 389px;
+    padding: 5px 10px;
+}
