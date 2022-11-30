@@ -1,0 +1,26 @@
+@import url(../common/style.css);
+
+.wrapper {
+    width: 416px;
+    height: 516px;
+    padding: 16px 28px;
+}
+
+.chat__title {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.chat__title::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.12);
+    height: 1px;
+    display: block;
+    margin-top: 14px;
+}
+
+.chat__page-time p {
+    font-size: 13px;
+    margin-top: -21px;
+    color: var(--text-color);
+}
