@@ -35,7 +35,7 @@
 }
 
 .header__button p::before {
-    content: url('/assets/plus-icon.svg');
+    content: url('../../assets/plus-icon.svg');
     position: absolute;
     top: 10%;
     left: 10%;
