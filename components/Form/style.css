@@ -3,5 +3,73 @@
 .wrapper {
     width: 472px;
     height: 389px;
-    padding: 5px 10px;
+    padding: 10px 20px;
+}
+
+.form__header {
+    font-size: 16px;
+    font-width: 500;
+}
+
+.form__header::after {
+    content: '';
+    background-color: #000;
+    height: 1px;
+    display: block;
+    margin-top: 14px;
+}
+
+.form__title {
+    padding: 20px 0 6px;
+    color: var(--text-color);
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+
+}
+fieldset {
+    border: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #000;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:   #000;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #000;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #000;
+}
+
+.email__field-input {
+    padding: 10px 20px;
+    width: 330px;
+    border: solid 1px rgba(0, 0, 0, 0.14);
+    border-radius: 6px;
+}
+
+.form__button{
+    width: 90px;
+    height: 39px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: #fff;
+    color: #000;
+    border: solid 1px;
+}
+
+.note__block {
+background-color: var(--text-color);
 }

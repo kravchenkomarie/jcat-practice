@@ -15,7 +15,7 @@
 .header__button {
     padding: 10px 5px;
     border: none;
-    border-radius: 7%;
+    border-radius: 7px;
     width: 5.72em;
     background-color: #EEE9FD;
     color: #6F47EB;
@@ -35,7 +35,7 @@
 }
 
 .header__button p::before {
-    content: url('/assets/img/plus-icon.svg');
+    content: url('/assets/plus-icon.svg');
     position: absolute;
     top: 10%;
     left: 10%;
