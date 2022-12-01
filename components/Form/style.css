@@ -71,11 +71,10 @@ fieldset {
 }
 
 .note__block {
-background-color: #EDEDED;
+    background-color: #EDEDED;
     padding: 12px 10px;
     margin: 12px 0;
     border-radius: 6px;
-
 }
 
 .note__block p {
@@ -156,4 +155,9 @@ input:checked + .slider::before {
     color: #fff;
     text-transform: uppercase;
     border: none;
+}
+
+.submit__button:hover {
+    color: #fff;
+    background: black;
 }
