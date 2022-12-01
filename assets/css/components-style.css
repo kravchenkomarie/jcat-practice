@@ -258,13 +258,15 @@ img {
     line-height: 20px;
 }
 
-.news__item-text > span.at {
+.news__item-text > .fa-at {
     font-size: 20px;
+    font-weight: 400;
     padding: 0 5px 0 12px;
 }
 
-.news__item-text > span.name {
+.news__item-text > .user__email {
     color: #6F47EB;
+    cursor: pointer;
 }
 
 .news__item-text > i {
