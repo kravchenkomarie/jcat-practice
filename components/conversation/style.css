@@ -21,6 +21,6 @@
 
 .chat__page-time p {
     font-size: 13px;
-    margin-top: -21px;
+    margin-bottom: 26px;
     color: var(--text-color);
 }
