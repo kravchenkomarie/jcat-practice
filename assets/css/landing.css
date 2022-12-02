@@ -1,0 +1,147 @@
+:root {
+    --green-color: #5FD788;
+    --gray-color: #9CA3AF;
+}
+
+@font-face {
+    font-family: 'San Francisco Pro';
+    src: url('../fonts/san-francisco-pro/sf-pro-display-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'San Francisco Pro';
+    src: url('../fonts/san-francisco-pro/sf-pro-display-medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'San Francisco Pro';
+    src: url('../fonts/san-francisco-pro/sf-pro-display-semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'San Francisco Pro';
+    src: url('../fonts/san-francisco-pro/sf-pro-display-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-family: 'San Francisco Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.wrapper {
+    width: 1252px;
+}
+
+
+.btn {
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.header {
+    width: 87%;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    column-gap: 150px;
+    height: 5em;
+    background: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+}
+
+.main:nth-of-type(1) {
+    margin-top: 5em;
+}
+
+.header__logo  {
+    display: grid;
+    grid-template-columns: 2.7em 1fr;
+    padding-top: 1.6em;
+    /*padding: 1.6em 0 0 5em;*/
+}
+
+.header__logo p {
+    font-size: 12px;
+    line-height: 135%;
+    padding-top: .5em;
+}
+
+.header__menu-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    сolumn-gap: .7em;
+    padding: 26px;
+}
+
+.header__menu-list-item {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header__buttons {
+    display: grid;
+    grid-template-columns: 1em 1fr;
+    font-size: 24px;
+}
+
+/*.header__search {*/
+/*    padding-right: 5em;*/
+/*}*/
+
+.main__page {
+    background-color: #ff33a8;
+    height: 802px;
+}
+
+.main__page-info {
+    width: 33em;
+}
+
+.main__page-info h1 {
+    color: var(--green-color);
+    font-size: 96px;
+    line-height: 86px;
+}
+
+.main__page-info p {
+    color: var(--gray-color);
+}
+
