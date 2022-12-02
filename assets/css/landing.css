@@ -12,6 +12,14 @@
 }
 
 @font-face {
+    font-family: 'San Francisco Pro Rounded';
+    src: url('../fonts/san-francisco-pro/sf-pro-rounded-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'San Francisco Pro';
     src: url('../fonts/san-francisco-pro/sf-pro-display-medium.woff2') format('woff2');
     font-weight: 500;
@@ -65,7 +73,7 @@ img {
 }
 
 .wrapper {
-    width: 1252px;
+    width: 1292px;
 }
 
 
@@ -76,15 +84,10 @@ img {
 }
 
 .header {
-    width: 87%;
+    width: 100%;
     display: grid;
     grid-template-columns: min-content 1fr min-content;
     column-gap: 150px;
-    height: 5em;
-    background: rgba(255, 255, 255, 0.7);
-    position: fixed;
-    margin-top: 0;
-    top: 0;
 }
 
 .main:nth-of-type(1) {
@@ -118,30 +121,35 @@ img {
 
 .header__buttons {
     display: grid;
-    grid-template-columns: 1em 1fr;
+    grid-template-columns: 1.3em 1fr;
     font-size: 24px;
 }
 
-/*.header__search {*/
-/*    padding-right: 5em;*/
-/*}*/
-
-.main__page {
-    background-color: #ff33a8;
-    height: 802px;
+.main__page-position {
+    display: flex;
 }
 
 .main__page-info {
-    width: 33em;
+    width: 31em;
+    padding-top: 16.8em;
 }
 
 .main__page-info h1 {
+    font-family: 'San Francisco Pro Rounded', sans-serif;
     color: var(--green-color);
     font-size: 96px;
-    line-height: 86px;
+    line-height: 89%;
 }
 
 .main__page-info p {
     color: var(--gray-color);
+    padding-top: 2.4em;
+    width: 26.5em;
+    line-height: 140%;
 }
 
+.main__page-image {
+    position: absolute;
+    right: 0;
+    top: 5em;
+}
