@@ -119,7 +119,7 @@ img {
 }
 
 .header__button p::before {
-    content: url('../../assets/images/team-plus-icon.svg');
+    content: url('../images/team/team-plus-icon.svg');
     position: absolute;
     top: 10%;
     left: 10%;
@@ -186,7 +186,7 @@ img {
 
 /*conversation component (start)*/
 
-.wrapper {
+.conversation__wrapper {
     width: 416px;
     height: 516px;
     padding: 16px 28px;
