@@ -160,9 +160,63 @@ footer:nth-of-type(1){
 
 /*section options*/
 
+.options {
+    height: 28em;
+    margin-top: 9em;
+}
+
 .options__menu-list {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.options__menu-list-item {
+    width: 17em;
+    height: 17em;
+    padding: 4.2em 5.3em 4.4em 5.3em;
+    border-radius: 0 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    background-color: #F9FAFB;
+    background-image: url('../images/landing/green-bg-for-icon.svg');
+    /*background-position: center;*/
+    background-position-x: center;
+    background-position-y: 4.7em;
+    background-repeat: no-repeat;
+}
+
+.options__menu-list-item:hover {
+    background-color: var(--green-color);
+    background-image: url('../images/landing/white-bg-for-icon.svg');
+}
+
+.options__menu-list-item img {
+    margin-bottom: 1em;
+}
+
+.options__menu-list-item p {
+    color: var(--green-color);
+}
+
+.options__menu-list-item p:hover {
+    color: #fff;
+}
+
+.essential-oil {
+    z-index: 4;
+}
+
+.natural-cosmetics {
+    z-index: 3;
+}
+
+.diffusers {
+    z-index: 2;
+}
+
+
+
+
 
 
 
@@ -170,3 +224,6 @@ footer:nth-of-type(1){
 
 /*section collection*/
 
+.collection {
+
+}
