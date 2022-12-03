@@ -55,6 +55,7 @@
 
 ul, li {
     list-style: none;
+    display: inline-block;
 }
 
 a {
@@ -134,7 +135,7 @@ footer:nth-of-type(1){
     height: 50em;
 }
 
-.main__page-position {
+.main__page-position, .collection__position {
     display: flex;
     justify-content: space-between;
 }
@@ -144,14 +145,14 @@ footer:nth-of-type(1){
     padding: 16.8em 0 0 5em;
 }
 
-.main__page-info h1 {
+.main__page-info h1, .collection__info h2 {
     font-family: 'San Francisco Pro Rounded', sans-serif;
     color: var(--green-color);
     font-size: 96px;
     line-height: 89%;
 }
 
-.main__page-info p {
+.main__page-info p, .collection__info p {
     color: var(--gray-color);
     padding-top: 2.4em;
     width: 26.5em;
@@ -174,31 +175,43 @@ footer:nth-of-type(1){
 .options__menu-list-item {
     width: 17em;
     height: 17em;
-    padding: 4.2em 5.3em 4.4em 5.3em;
+    /* padding: 4.2em 5.3em 4.4em 5.3em; */
     border-radius: 0 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
     background-color: #F9FAFB;
     background-image: url('../images/landing/green-bg-for-icon.svg');
-    /*background-position: center;*/
     background-position-x: center;
     background-position-y: 4.7em;
     background-repeat: no-repeat;
+
+text-align: center;
+
 }
+
+
 
 .options__menu-list-item:hover {
     background-color: var(--green-color);
     background-image: url('../images/landing/white-bg-for-icon.svg');
+    color: #fff;
 }
 
+
+
 .options__menu-list-item img {
-    margin-bottom: 1em;
+  /* margin-bottom: 1em; */
+/* padding-top: 50px; */
+margin-top: 3.7em;
+
 }
 
 .options__menu-list-item p {
-    color: var(--green-color);
+  color: var(--green-color);
+  text-align: center;
+  padding: 30px;
 }
 
-.options__menu-list-item p:hover {
+.options__menu-list-item:hover p {
     color: #fff;
 }
 
@@ -221,9 +234,35 @@ footer:nth-of-type(1){
 
 
 
-
 /*section collection*/
 
-.collection {
+.collection__position {
+  display: flex;
+  justify-content: space-between;
+}
 
+.collection__info {
+  width: 36em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.collection__info h2 {
+font-size: 50px;
+text-align: end;
+}
+.collection__info p {
+  text-align: end;
+}
+
+.collection__button {
+  color: #fff;
+  background-color: var(--green-color);
+  border-radius: 8px;
+  padding: 0.8em 1.9em;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 1.5em;
 }
