@@ -145,7 +145,7 @@ footer:nth-of-type(1){
     padding: 16.8em 0 0 5em;
 }
 
-.main__page-info h1, .collection__info h2 {
+.main__page-info h1, .collection__info h2, .soap__info h2 {
     font-family: 'San Francisco Pro Rounded', sans-serif;
     color: var(--green-color);
     font-size: 96px;
@@ -183,12 +183,8 @@ footer:nth-of-type(1){
     background-position-x: center;
     background-position-y: 4.7em;
     background-repeat: no-repeat;
-
-text-align: center;
-
+    text-align: center;
 }
-
-
 
 .options__menu-list-item:hover {
     background-color: var(--green-color);
@@ -196,13 +192,10 @@ text-align: center;
     color: #fff;
 }
 
-
-
 .options__menu-list-item img {
   /* margin-bottom: 1em; */
 /* padding-top: 50px; */
-margin-top: 3.7em;
-
+  margin-top: 3.7em;
 }
 
 .options__menu-list-item p {
@@ -227,13 +220,6 @@ margin-top: 3.7em;
     z-index: 2;
 }
 
-
-
-
-
-
-
-
 /*section collection*/
 
 .collection__position {
@@ -257,7 +243,7 @@ text-align: end;
   text-align: end;
 }
 
-.collection__button {
+.collection__button, .soap__button {
   color: #fff;
   background-color: var(--green-color);
   border-radius: 8px;
@@ -266,3 +252,40 @@ text-align: end;
   text-transform: uppercase;
   margin-top: 1.5em;
 }
+
+/* soap section */
+
+.soap {
+  display: flex;
+}
+
+.soap__info {
+  background-image: url(/assets/images/landing/background-soap.png);
+  width: 57em;
+  padding: 7em;
+}
+
+.soap__photo {
+  background-image: url(/assets/images/landing/picture-soap.png);
+  width: 46em;
+  height: 32em;
+}
+
+ .soap__info h2 {
+   color: #fff;
+   font-size: 50px;
+   width: 10em;
+ }
+
+ .soap__button {
+  color: #000;
+  background-color: #fff;
+  padding: 0.8em 7em;
+ }
+
+/* bestsellers section */
+
+.bestsellers {
+
+}
+
