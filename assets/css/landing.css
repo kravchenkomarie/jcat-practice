@@ -1,6 +1,8 @@
 :root {
     --green-color: #5FD788;
     --gray-color: #9CA3AF;
+    --dark-gray: #1F2937;
+    --medium-gray: #6B7280;
 }
 
 @font-face {
@@ -145,7 +147,7 @@ footer:nth-of-type(1){
     padding: 16.8em 0 0 5em;
 }
 
-.main__page-info h1, .collection__info h2, .soap__info h2 {
+.main__page-info h1, .collection__info h2, .soap__info h2, .bestsellers__info h2 {
     font-family: 'San Francisco Pro Rounded', sans-serif;
     color: var(--green-color);
     font-size: 96px;
@@ -193,8 +195,6 @@ footer:nth-of-type(1){
 }
 
 .options__menu-list-item img {
-  /* margin-bottom: 1em; */
-/* padding-top: 50px; */
   margin-top: 3.7em;
 }
 
@@ -243,7 +243,7 @@ text-align: end;
   text-align: end;
 }
 
-.collection__button, .soap__button {
+.collection__button, .soap__button, .bestsellers__button {
   color: #fff;
   background-color: var(--green-color);
   border-radius: 8px;
@@ -262,7 +262,7 @@ text-align: end;
 .soap__info {
   background-image: url(/assets/images/landing/background-soap.png);
   width: 57em;
-  padding: 7em;
+  padding: 5em;
 }
 
 .soap__photo {
@@ -280,7 +280,7 @@ text-align: end;
  }
 
  .soap__button {
-  color: #000;
+  color: var(--dark-gray);
   background-color: #fff;
   padding: 0.8em 7em;
  }
@@ -288,6 +288,103 @@ text-align: end;
 /* bestsellers section */
 
 .bestsellers {
-
+  background-image: url(/assets/images/landing/background-bestsellers.svg);
+  background-repeat: no-repeat;
+  margin-top: 14.75em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+.slide__icon {
+padding: 4em;
+display: block;
+margin: 0 auto;
+}
+
+.bestsellers__cards-list {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.bestsellers__info h2 {
+  font-size: 50px;
+}
+
+.bestsellers__button {
+  background-color: var(--green-color);
+  border-radius: 6px;
+  padding: 0.8em 7em;
+}
+
+.bestsellers__cards-list-item {
+  width: 27.4em;
+  height: 27.4em;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.bestsellers__card-info:hover {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12.5px);
+}
+
+.brown__diffuser {
+  background-image: url(/assets/images/landing/brown-diffuser.png);
+}
+
+.black__diffuser {
+  background-image: url(/assets/images/landing/black-diffuser.png);
+}
+
+.bestsellers__card-info {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(7.5px);
+  border-radius: 0px 20px;
+  padding: 0.8em 7.5em 0.6em 1.9em;
+  }
+
+  .bestsellers__cards-list-item img {
+    position: absolute;
+    bottom: 7%;
+    right: 5%;
+  }
+
+.bestsellers__card-info h3 {
+  color:var(--dark-gray);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.bestsellers__card-info h3:after {
+  content: '';
+  padding: .5em 1em;
+  margin-left: .8em;
+  font-size: 10px;
+  font-weight: 700;
+  background-color: var(--green-color);
+  color: #fff;
+  border-radius: 11px;
+}
+
+.costs__20-dollars h3:after {
+  content: '$20';
+}
+
+.costs__15-dollars h3:after  {
+  content: '$15';
+}
+
+.bestsellers__card-info p {
+  color: var(--medium-gray);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  width: 18em;
+}
+
+
 
