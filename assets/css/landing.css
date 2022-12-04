@@ -147,7 +147,7 @@ footer:nth-of-type(1){
     padding: 16.8em 0 0 5em;
 }
 
-.main__page-info h1, .collection__info h2, .soap__info h2, .bestsellers__info h2 {
+.main__page-info h1, .collection__info h2, .soap__info h2, .bestsellers__info h2, .blog h2 {
     font-family: 'San Francisco Pro Rounded', sans-serif;
     color: var(--green-color);
     font-size: 96px;
@@ -386,5 +386,49 @@ margin: 0 auto;
   width: 18em;
 }
 
+/* blog section */
 
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.blog h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  padding: .3em;
+}
+
+.blog__articles {
+  display: flex;
+}
+
+.blog__post {
+  width: 26em;
+  height: 27em;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 1.5em;
+}
+
+.blog__post img {
+  border-radius: 8px;
+}
+
+.blog__post h3 {
+  width: 21em;
+  color: var(--green-color);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  padding: 1em;
+}
+
+.blog__post p {
+  color: var(--dark-gray);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  padding-left: 1.2em;
+}
