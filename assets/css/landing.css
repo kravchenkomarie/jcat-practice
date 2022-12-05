@@ -657,6 +657,22 @@ margin: 0 auto;
         column-gap: 43px;
     }
 
+    .header__menu-list {
+        visibility: hidden;
+    }
+
+    .header__buttons {
+        visibility: hidden;
+    }
+
+    .fa-bars {
+        visibility: visible;
+        position: absolute;
+        top: 2em;
+        right: 3em;
+        font-size: 15px;
+    }
+
     /*main page section*/
 
     .main__page-info {
@@ -768,6 +784,7 @@ margin: 0 auto;
 }
 
 @media (max-width: 480px) {
+
     /*header*/
 
     .header {
@@ -912,24 +929,48 @@ margin: 0 auto;
         flex-direction: column;
     }
 
-
-
 }
 
 @media (max-width: 375px) {
 
+    /*main page section*/
 
-
-    /*options section*/
-
-    .options__menu-list {
-
+    .main__page-info {
+        padding: 4em 0 0 2em;
     }
 
-    .options__menu-list-item {
-        /*width: 15em;*/
-        /* height: 15em;*/
+    .main__page-info p {
+        width: 17em;
     }
+
+    .main__page-image {
+        width: 18em;
+    }
+
+    /*collection section*/
+
+    .collection__position {
+        margin: 2.5em .5em 2.5em 0;
+    }
+
+    .collection__info {
+        width: 12em;
+    }
+
+    .collection__info h2 {
+        font-size: 19px;
+        width: 11em;
+    }
+
+    .collection__info p {
+        font-size: 10px;
+        width: 19em;
+    }
+
+    .collection__button {
+        font-size: 12px;
+    }
+
 }
 
 
