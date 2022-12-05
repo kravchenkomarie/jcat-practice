@@ -794,6 +794,38 @@ margin: 0 auto;
 
 }
 
+@media (max-width: 940px) and (min-width: 378px) {
+
+    .header {
+        height: 5em;
+    }
+
+    /*main page section*/
+
+    .main__page-info {
+        width: 13em;
+        padding: 3em 0 0 2em;
+    }
+
+    .main__page-info h1 {
+        font-size: 40px;
+    }
+
+    .main__page-info p {
+        width: 17em;
+    }
+
+    .main__page-image {
+        width: 23em;
+    }
+
+    /*collection section*/
+
+    .collection img {
+        width: 50%;
+    }
+}
+
 @media (max-width: 480px) {
 
     /*header*/
