@@ -71,7 +71,9 @@ img {
 }
 
 .container {
-    width: 1440px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .btn {
@@ -327,7 +329,7 @@ margin: 0 auto;
 
 .bestsellers__card-info:hover {
   background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(12.5px);
+  backdrop-filter: blur(12px);
 }
 
 .brown__diffuser {
@@ -340,7 +342,7 @@ margin: 0 auto;
 
 .bestsellers__card-info {
   background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(7.5px);
+  backdrop-filter: blur(7px);
   border-radius: 0px 20px;
   padding: 0.8em 7.5em 0.6em 1.9em;
   }
@@ -502,3 +504,119 @@ margin: 0 auto;
   text-align: center;
   color: var(--medium-gray);
 }
+
+
+/*медиа-запросы*/
+
+@media (max-width: 1200px) {
+
+    /*collection section*/
+
+    .collection__info {
+        margin-right: 4em;
+    }
+
+    .collection__info h2 {
+        font-size: 40px;
+    }
+
+    .collection__info p {
+        font-size: 12px;
+    }
+
+    /*bestsellers section*/
+
+    .bestsellers {
+        background-size: 20% auto;
+        margin-top: 10.5em;
+    }
+
+    .bestsellers__info {
+        padding-bottom: 7em;
+    }
+
+    .bestsellers__info h2 {
+        font-size: 45px;
+    }
+
+    .bestsellers__cards-list-item {
+        width: 20em;
+        height: 20em;
+    }
+
+    .bestsellers__cards-list-item:first-child {
+        margin-right: 2em;
+    }
+
+    .brown__diffuser, .black__diffuser {
+        background-size: cover;
+    }
+
+    .bestsellers__card-info {
+        padding: .7em 5.2em .3em 1.9em;
+        border-radius: 0 32px;
+    }
+
+    .bestsellers__card-info h3:after {
+        font-size: 7px;
+    }
+
+    .bestsellers__card-info h3 {
+        font-size: 14px;
+    }
+
+    .bestsellers__card-info p {
+        font-size: 10px;
+    }
+
+    .bestsellers__cards-list-item img {
+        width: 2.5em;
+    }
+
+    /*blog section*/
+
+    .blog {
+        margin-bottom: 10em;
+    }
+
+    .blog h2 {
+        font-size: 40px;
+    }
+
+    .blog__post {
+        width: 20em;
+        height: 21em;
+    }
+
+    .blog__post h3 {
+        width: 18em;
+        font-size: 17px;
+    }
+
+    .blog__post p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 375px) {
+
+}
+
+
+
+
+
+
+
