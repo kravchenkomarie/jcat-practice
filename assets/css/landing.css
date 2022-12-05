@@ -334,10 +334,12 @@ margin: 0 auto;
 
 .brown__diffuser {
   background-image: url(../../assets/images/landing/brown-diffuser.png);
+    z-index: -1;
 }
 
 .black__diffuser {
   background-image: url(../../assets/images/landing/black-diffuser.png);
+    z-index: -1;
 }
 
 .bestsellers__card-info {
@@ -599,6 +601,46 @@ margin: 0 auto;
 }
 
 @media (max-width: 992px) {
+
+    /*options section*/
+
+    .options {
+        margin: 3em 5em 0 5em;
+    }
+
+    /*collection section*/
+
+    .collection img {
+        width: 60%;
+    }
+
+    .collection h2 {
+        font-size: 30px;
+    }
+
+    .collection p {
+        font-size: 10px;
+    }
+
+    /*soap section*/
+
+    .soap__info {
+        width: 50em;
+    }
+
+    .soap__info h2 {
+        font-size: 40px;
+    }
+
+    .soap__photo {
+        background-size: cover;
+    }
+
+    /*bestsellers section*/
+
+    .bestsellers {
+        margin-top: 7.5em;
+    }
 
 }
 
