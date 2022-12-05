@@ -648,7 +648,7 @@ margin: 0 auto;
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 940px) {
 
     /*header section*/
 
@@ -727,6 +727,13 @@ margin: 0 auto;
         padding-left: 2em;
     }
 
+    .bestsellers__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em;
+    }
+
     .bestsellers__info h2 {
         font-size: 39px;
     }
@@ -734,6 +741,10 @@ margin: 0 auto;
     .bestsellers__button {
        font-size: 12px;
         padding: .5em 3.5em;
+    }
+
+    .black__diffuser {
+        display: none;
     }
 
     .bestsellers__cards-list-item {
@@ -778,7 +789,7 @@ margin: 0 auto;
     /*footer*/
 
     .footer {
-        grid-template-columns: .5fr 2fr 1fr;
+        grid-template-columns: .5fr 2fr .5fr;
     }
 
 }
@@ -885,7 +896,8 @@ margin: 0 auto;
 
     .bestsellers {
         flex-direction: column;
-        margin-top: 3em;
+        margin: 0 auto;
+        padding: 2em 0 0 0;
     }
 
     .bestsellers__info {
