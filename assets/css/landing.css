@@ -82,6 +82,10 @@ img {
     background-color: inherit;
 }
 
+.fa-bars {
+    visibility: hidden;
+}
+
 /*header*/
 
 .header {
@@ -764,11 +768,168 @@ margin: 0 auto;
 }
 
 @media (max-width: 480px) {
+    /*header*/
+
+    .header {
+        grid-template-columns: .5fr 4fr .5fr;
+        column-gap: 15px;
+        height: 19%;
+    }
+
+    .header__logo {
+        padding: 2em;
+    }
+
+    .header__menu-list {
+        visibility: hidden;
+    }
+
+    .header__buttons {
+        visibility: hidden;
+    }
+
+    .fa-bars {
+        visibility: visible;
+        position: absolute;
+        top: 2em;
+        right: 3em;
+        font-size: 15px;
+    }
+
+    /*main page*/
+
+    .main__page-info {
+        width: 13em;
+        padding: 4em 0 0 3em;
+    }
+
+    .main__page-image {
+        width: 20em;
+    }
+
+    .main__page-info h1 {
+        font-size: 40px;
+    }
+
+    .main__page-info p {
+        width: 20em;
+        font-size: 10px;
+    }
+
+    /*options section*/
+
+    .options__menu-list-item {
+        width: 16em;
+        height: 16em;
+    }
+
+    /*collection section*/
+
+    .collection__position {
+        margin-right: 7em;
+    }
+
+    .collection img {
+        width: 50%;
+    }
+
+    .collection__info h2 {
+        font-size: 25px;
+    }
+
+    .collection__button {
+        font-size: 14px;
+        padding: 0.6em 1.5em;
+    }
+
+    /*soap section*/
+
+    .soap {
+        flex-direction: column;
+    }
+
+    .soap__info {
+        padding: 3em;
+    }
+
+    .soap__info h2 {
+        font-size: 24px;
+    }
+
+    .soap__button {
+        font-size: 10px;
+    }
+
+    .soap__photo {
+        width: 100%;
+    }
+
+    /*bestsellers section*/
+
+    .bestsellers {
+        flex-direction: column;
+        margin-top: 3em;
+    }
+
+    .bestsellers__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em;
+    }
+
+    .bestsellers__info h2 {
+        font-size: 29px;
+    }
+
+    .black__diffuser {
+        display: none;
+    }
+
+    /*blog section*/
+
+    .blog {
+        margin-bottom: 0;
+    }
+
+    .blog__post:not(:first-child) {
+        display: none;
+    }
+
+    /*footer*/
+
+    .footer {
+        margin-top: 0;
+        grid-template-columns: .5fr 2fr .5fr;
+    }
+
+    .footer__logo {
+        margin-left: 2em;
+        font-size: 12px;
+    }
+
+    .footer__info {
+        flex-direction: column;
+    }
+
+
 
 }
 
 @media (max-width: 375px) {
 
+
+
+    /*options section*/
+
+    .options__menu-list {
+
+    }
+
+    .options__menu-list-item {
+        /*width: 15em;*/
+        /* height: 15em;*/
+    }
 }
 
 
