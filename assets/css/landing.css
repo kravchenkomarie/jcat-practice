@@ -135,10 +135,6 @@ footer:nth-of-type(1){
 
 /*main page*/
 
-.main__page {
-    height: 50em;
-}
-
 .main__page-position, .collection__position {
     display: flex;
     justify-content: space-between;
@@ -210,15 +206,19 @@ footer:nth-of-type(1){
 }
 
 .essential-oil {
-    z-index: 4;
+    z-index: -2;
 }
 
 .natural-cosmetics {
-    z-index: 3;
+    z-index: -3;
 }
 
 .diffusers {
-    z-index: 2;
+    z-index: -4;
+}
+
+.aromatherapy {
+    z-index: -5;
 }
 
 /*section collection*/
@@ -645,6 +645,121 @@ margin: 0 auto;
 }
 
 @media (max-width: 768px) {
+
+    /*header section*/
+
+    .header {
+        grid-template-columns: 1fr 4fr 1fr;
+        column-gap: 43px;
+    }
+
+    /*main page section*/
+
+    .main__page-info {
+        width: 25em;
+        padding: 10em 0 0 5em;
+    }
+
+    .main__page-info h1 {
+        width: 4em;
+        font-size: 50px;
+    }
+
+    .main__page-info p {
+        width: 23em;
+        font-size: 12px;
+        padding-top: 1em;
+    }
+
+    .main__page-image {
+        width: 40em;
+    }
+
+    /*options section*/
+
+    .options__menu-list {
+        flex-wrap: wrap;
+    }
+
+    .options__menu-list-item {
+        margin: 1.5em;
+    }
+
+
+    /*soap section*/
+
+    .soap__info h2 {
+        font-size: 30px;
+    }
+
+    .soap__photo {
+        height: 26em;
+    }
+
+    .soap__button {
+        font-size: 13px;
+    }
+
+    /*bestsellers section*/
+
+    .bestsellers {
+        width: 100%;
+        padding-left: 2em;
+    }
+
+    .bestsellers__info h2 {
+        font-size: 39px;
+    }
+
+    .bestsellers__button {
+       font-size: 12px;
+        padding: .5em 3.5em;
+    }
+
+    .bestsellers__cards-list-item {
+        width: 15em;
+        height: 15em;
+        margin: 2em;
+    }
+
+    .bestsellers__card-info {
+        padding: .7em 2.7em .3em 1.9em;
+        border-radius: 0 32px 0 0;
+    }
+
+    .bestsellers__cards-list-item img {
+        width: 2em;
+    }
+
+    .bestsellers__card-info p {
+        font-size: 8px;
+    }
+
+    .bestsellers__card-info h3 {
+        font-size: 13px;
+    }
+
+    .slide__icon {
+        padding: 1em 1em 3em 1em;
+        width: 4em;
+    }
+
+    /*blog section*/
+
+    .blog h2 {
+        font-size: 30px;
+    }
+
+    .blog__articles {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /*footer*/
+
+    .footer {
+        grid-template-columns: .5fr 2fr 1fr;
+    }
 
 }
 
