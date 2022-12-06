@@ -83,6 +83,11 @@ a {
     background: rgba(255, 255, 255, 0.7);
 }
 
+.header__links {
+    text-transform: uppercase;
+    color: var(--dark-gray);
+}
+
 .header img {
     width: 24px;
 }
