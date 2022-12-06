@@ -34,6 +34,7 @@ img {
 }
 
 .main a {
+    font-family: 'Quicksand', sans-serif;
     width: 12em;
     display: block;
     color: #ff33a8;
