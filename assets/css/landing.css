@@ -107,17 +107,8 @@ a {
 
 .main {
     margin-top: 5em;
+    overflow: hidden;
 }
-
-/*.main__page-position, .collection__position {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*}*/
-
-/*.main__page-info {*/
-/*    width: 31em;*/
-/*    padding: 16.8em 0 0 5em;*/
-/*}*/
 
 .main__page-title, .collection__info h2, .soap__info h2, .bestsellers__info h2, .blog h2 {
     font-family: 'San Francisco Pro Rounded', sans-serif;
@@ -134,12 +125,7 @@ a {
 
 .options {
     margin-top: 9em;
-}
-
-.options__menu-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0 1em;
 }
 
 .options__menu-list-item {
