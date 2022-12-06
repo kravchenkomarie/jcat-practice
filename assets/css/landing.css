@@ -115,14 +115,14 @@ a {
     overflow: hidden;
 }
 
-.main__page-title, .collection__info h2, .soap__info h2, .bestsellers__info h2, .blog h2 {
+.main__page-title, .collection__title, .soap__info h2, .bestsellers__info h2, .blog h2 {
     font-family: 'San Francisco Pro Rounded', sans-serif;
     color: var(--green-color);
     font-size: 96px;
     line-height: 89%;
 }
 
-.main__page-text, .collection__info p {
+.main__page-text, .collection__text {
     color: var(--gray-color);
 }
 
@@ -184,24 +184,28 @@ a {
 
 /*section collection*/
 
-.collection__position {
-  display: flex;
-  justify-content: space-between;
+/*.collection__position {*/
+/*  display: flex;*/
+/*  justify-content: space-between;*/
+/*}*/
+
+/*.collection__info {*/
+/*  width: 36em;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: flex-end;*/
+/*  justify-content: center;*/
+/*}*/
+
+.collection img {
+    display: block;
 }
 
-.collection__info {
-  width: 36em;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.collection__info h2 {
+.collection__title {
 font-size: 50px;
 text-align: end;
 }
-.collection__info p {
+.collection__text {
   text-align: end;
 }
 
@@ -1032,6 +1036,14 @@ footer:nth-of-type(1){
 @media (max-width: 1200px) {
     .main__page-title {
         font-size: 86px;
+    }
+
+    .collection-title {
+        font-size: 35px;
+    }
+    .main__page-text {
+        font-size: 10px;
+        padding-right: 3em;
     }
 }
 
