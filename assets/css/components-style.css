@@ -25,18 +25,25 @@ img {
     height: auto;
 }
 
+.body {
+    background-color: #d3d6dc;
+}
+
 .main {
     margin: 50px;
-    border-radius: 20%;
 }
 
 .main a {
+    width: 12em;
     display: block;
     color: #ff33a8;
+    background-color: #fff;
     font-size: 24px;
     padding: 10px;
     margin: 10px;
-    border: solid 1px #b4b4b4;
+    box-shadow: 10px 5px 5px #a6a4a4;
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
     cursor: pointer;
 }
 
