@@ -794,7 +794,7 @@ margin: 0 auto;
 
 }
 
-@media (max-width: 940px) and (min-width: 378px) {
+@media (max-width: 670px) and (min-width: 479px) {
 
     .header {
         height: 5em;
