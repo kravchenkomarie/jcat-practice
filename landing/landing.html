@@ -14,29 +14,28 @@
 </head>
 <body>
 <div class="container-fluid m-0 p-0">
-    <header class="row d-flex justify-content-between fixed-top p-3 header">
-        <div class="col-2 d-lg-flex justify-content-end align-items-center">
-            <a href="#" class="d-flex flex-row">
-                <img src="../assets/images/landing/landing-logo.svg" alt="logo of the site"
-                     class="img-fluid logo__position">
-                <p class="m-0">Toutem</p>
+    <header class="header">
+        <div class="logo">
+            <a href="#" class="logo__link">
+                <img src="../assets/images/landing/landing-logo.svg" alt="logo of the site" class="logo__image">
+                <p class="logo__title">Toutem</p>
             </a>
         </div>
-        <nav class="col-lg-8 d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">
-            <ul class="d-flex justify-content-center m-0 header__links">
-                <li class="p-2"><a href="#">Home</a></li>
-                <li class="p-2"><a href="#">About us</a></li>
-                <li class="p-2"><a href="#">Shop</a></li>
-                <li class="p-2"><a href="#">Contact</a></li>
-            </ul>
+
+        <nav class="header__navigation">
+            <div class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">
+                <a href="#" class="header__link">Home</a>
+                <a href="#" class="header__link">About us</a>
+                <a href="#" class="header__link">Shop</a>
+                <a href="#" class="header__link">Contact</a>
+            </div>
         </nav>
-        <div class="col d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">
-            <div class="header__buttons">
-                <button class="btn">
-                    <img src="../assets/images/landing/cart-icon.svg" alt="cart icon">
+
+        <div class="header__buttons">
+            <div class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block d-flex ">
+                <button class="button cart__button">
                 </button>
-                <button class="btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <button class="button search__button">
                 </button>
             </div>
         </div>
