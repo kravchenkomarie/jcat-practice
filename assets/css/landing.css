@@ -220,20 +220,17 @@ text-align: end;
 
 /* soap section */
 
-.soap {
-  display: flex;
-}
+
 
 .soap__info {
   background-image: url(../../assets/images/landing/background-soap.png);
-  width: 57em;
+    background-size: cover;
   padding: 5em;
 }
 
 .soap__photo {
   background-image: url(../../assets/images/landing/picture-soap.png);
-  width: 46em;
-  height: 32em;
+    background-size: cover;
 }
 
  .soap__info h2 {
@@ -1056,6 +1053,18 @@ footer:nth-of-type(1){
     .collection__text {
         font-size: 12px;
     }
+
+    .soap {
+        height: 18em;
+    }
+
+    .soap__info h2 {
+        font-size: 30px;
+    }
+
+    .soap__button {
+        font-size: 14px;
+    }
 }
 
 
@@ -1081,6 +1090,15 @@ footer:nth-of-type(1){
     }
     .collection__button {
         font-size: 10px;
+    }
+    .soap__info {
+        padding: 3em;
+    }
+    .soap__info h2 {
+        font-size: 20px;
+    }
+    .soap__button {
+        font-size: 9px;
     }
 }
 
