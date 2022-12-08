@@ -68,7 +68,7 @@ img {
     position: fixed;
     top: 0;
     margin-top: 0;
-    padding: 2.2em 0;
+    padding: 2.5em 0;
 }
 
 .logo {
@@ -126,7 +126,7 @@ img {
     /* display: flex;
     justify-content: center;
     align-items: center; */
-    padding-left: 13em;
+    padding-left: 11em;
 }
 
 .header__cart-button {
@@ -179,11 +179,15 @@ img {
 }
 
 .main__page-title {
-    padding-bottom: .4em;
+    padding-bottom: .3em;
+    font-size: 96px;
+    line-height: 86px;
+    letter-spacing: 3px;
 }
 
 .main__page-text {
     width: 26.5em;
+    font-size: 12px;
     line-height: 20px;
 }
 
@@ -193,13 +197,10 @@ img {
 .bestsellers__info h2,
 .blog h2 {
     color: var(--green-color);
-    font-size: 96px;
-    line-height: 86px;
 }
 
 .main__page-text, .collection__text {
     color: var(--gray-color);
-    font-size: 12px;
 }
 
 /*section options*/
@@ -573,6 +574,13 @@ footer:nth-of-type(1) {
         font-size: 66px;
     }
 
+    .main__page-info {
+    width: 40em;
+}
+
+
+
+
     .collection__title {
         font-size: 40px;
     }
@@ -628,6 +636,17 @@ footer:nth-of-type(1) {
 
 
 @media (max-width: 768px) {
+
+  /* main page */
+        .main__page-info {
+        width: 30em;
+        padding-left: 5em;
+    }
+
+.main__page-title {
+  font-size: 55px;
+}
+
     .collection__info {
         padding-right: 2.5em;
     }
@@ -641,10 +660,12 @@ footer:nth-of-type(1) {
 @media (max-width: 576px) {
     .main__page-title {
         font-size: 50px;
+        line-height: 50px;
     }
 
     .main__page-text {
-        font-size: 11px;
+        width: 25em;
+        font-size: 10px;
     }
 
     .collection__title {
@@ -698,14 +719,37 @@ footer:nth-of-type(1) {
 }
 
 @media (max-width: 375px) {
+
+  .header {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .logo {
+    padding: 0;
+  }
+
+
+   .header__burger-menu span {
+      padding: 3px;
+      height: 2px;
+    }
+
+  .main__page-info {
+    padding-left: 2em;
+  }
+
     .main__page-title {
         font-size: 40px;
+        line-height: 35px;
     }
 
     .main__page-text {
         font-size: 10px;
-        padding-right: 3em;
+         line-height: 15px;
+         padding-bottom: 1.5em;
     }
+
 
     .bestsellers__info h2 {
         font-size: 25px;
