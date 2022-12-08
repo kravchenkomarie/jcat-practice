@@ -25,6 +25,11 @@ body {
     font-weight: 600;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'San Francisco Pro Rounded', sans-serif;
+    font-weight: 600;
+}
+
 ul, li {
     list-style: none;
     display: inline-block;
@@ -153,15 +158,33 @@ img {
     overflow: hidden;
 }
 
-.main__page-title, .collection__title, .soap__info h2, .bestsellers__info h2, .blog h2 {
-    font-family: 'San Francisco Pro Rounded', sans-serif;
+.main__page-info {
+    width: 49.8em;
+    padding-left: 8em;
+}
+
+.main__page-title {
+    padding-bottom: .4em;
+}
+
+.main__page-text {
+    width: 26.5em;
+    line-height: 20px;
+}
+
+.main__page-title,
+.collection__title,
+.soap__info h2,
+.bestsellers__info h2,
+.blog h2 {
     color: var(--green-color);
     font-size: 96px;
-    line-height: 89%;
+    line-height: 86px;
 }
 
 .main__page-text, .collection__text {
     color: var(--gray-color);
+    font-size: 12px;
 }
 
 /*section options*/
