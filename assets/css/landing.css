@@ -124,18 +124,16 @@ img {
     height: 16px;
 }
 
-.burger__menu {
+.header__burger-menu {
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
     border-radius: 50%;
     font-size: 0;
     width: 4rem;
     height: 100%;
-    posotion: absolute;
 }
 
-.burger__menu span {
+.header__burger-menu span {
     content: '';
     display: inline-block;
     background-color: var(--medium-gray);
