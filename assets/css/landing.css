@@ -257,7 +257,11 @@ img {
 /*section collection*/
 
 .collection__info {
-    padding-right: 6em;
+    padding-right: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .collection img {
@@ -268,22 +272,31 @@ img {
     font-size: 50px;
     width: 11em;
     text-align: end;
+    letter-spacing: 0.01em;
+    line-height: 54px;
 }
 
 .collection__text {
     text-align: end;
     padding-top: 1.5em;
     width: 27em;
+   font-size: 14px;
+   line-height: 20px;
 }
 
-.collection__button, .soap__button, .bestsellers__button {
+.collection__button,
+.soap__button,
+.bestsellers__button {
+    width: 274px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    border-radius: 8px;
+    margin-top: 1.5em;
+    text-transform: uppercase;
     color: #fff;
     background-color: var(--green-color);
-    border-radius: 8px;
-    padding: 0.8em 1.9em;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-top: 1.5em;
 }
 
 /* soap section */
