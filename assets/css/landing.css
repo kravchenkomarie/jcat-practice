@@ -29,6 +29,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'San Francisco Pro Rounded', sans-serif;
     font-weight: 600;
 }
+p {
+  padding: 0;
+  margin: 0;
+}
 
 ul, li {
     list-style: none;
@@ -60,6 +64,7 @@ img {
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 8fr 2fr;
+    align-items: center;
     position: fixed;
     top: 0;
     margin-top: 0;
@@ -67,9 +72,11 @@ img {
 }
 
 .logo {
-    display: flex;
+  padding-left: 10.5em;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+
 }
 
 .logo__link {
@@ -78,29 +85,36 @@ img {
 }
 
 .logo__title {
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--gray-800);
     font-size: 12px;
+    padding-left: .5em;
 }
 
 .logo__image {
-    padding-right: 1.3em;
+    padding-right: .5em;
 }
 
 .header__navigation {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    justify-content: center; */
+    padding-left: 4.1em;
 }
 
 .header__link {
     text-transform: uppercase;
     text-align: center;
-    padding: 0 .6em;
+    padding: 0 .5em;
     font-size: 12px;
     line-height: 16px;
     color: var(--gray-800);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .header__links {
@@ -109,16 +123,17 @@ img {
 }
 
 .header__buttons {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    padding-left: 13em;
 }
 
 .header__cart-button {
     background-image: url('../images/landing/icon-cart.svg');
     background-size: cover;
-    margin-right: 12px;
-    width: 14px;
+    margin-right: 1em;
+    width: 15px;
     height: 16px;
 }
 
