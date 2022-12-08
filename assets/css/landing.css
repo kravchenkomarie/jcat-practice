@@ -3,7 +3,7 @@
 :root {
     --green-color: #5FD788;
     --gray-color: #9CA3AF;
-    --dark-gray: #1F2937;
+    --dark-gray: #3c4757;
     --medium-gray: #6B7280;
 }
 
@@ -50,15 +50,24 @@ img {
 
 .header {
     background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 7em;
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+}
+
+.logo {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .logo__link {
     display: flex;
     flex-direction: row;
-    padding-top: 2em;
 }
 
 .logo__title {
@@ -68,19 +77,21 @@ img {
 }
 
 .logo__image {
-    padding-right: .75em;
+    padding-right: 1.3em;
 }
 
 .header__navigation {
-    padding-top: 1.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header__link {
     text-transform: uppercase;
     text-align: center;
     padding: 0 .6em;
-
     font-size: 12px;
+    line-height: 16.2px;
     color: var(--dark-gray);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -91,33 +102,48 @@ img {
 }
 
 .header__buttons {
-    margin-top: 1.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cart__button {
     background-image: url('../images/landing/icon-cart.svg');
     background-size: cover;
     margin-right: .75em;
-    width: .9em;
-    height: 1em;
+    width: 1.6em;
+    height: 1.7em;
 }
 
 .search__button {
     background-image: url('../../assets/images/landing/icon-search.svg');
     background-size: cover;
-    width: 1em;
-    height: .9em;
+    width: 1.7em;
+    height: 1.6em;
 }
 
-.fa-bars {
+.burger__menu {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 5em;
+    justify-content: space-evenly;
+    border-radius: 50%;
+    font-size: 0;
+    width: 4rem;
+    height: 100%;
 }
 
+.burger__menu span {
+    content: '';
+    display: inline-block;
+    background-color: var(--medium-gray);
+    padding: 4px;
+    border-radius: 50%;
+    height: 8px;
+}
 
-
+.burger__menu span:nth-child(2) {
+    margin: 0 5em;
+}
 
 /*main page*/
 
@@ -227,7 +253,6 @@ img {
 }
 
 /* soap section */
-
 
 .soap__info {
     background-image: url(../../assets/images/landing/background-soap.png);
