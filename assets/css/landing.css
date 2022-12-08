@@ -691,6 +691,14 @@ footer:nth-of-type(1) {
          line-height: 15px;
          padding-bottom: 1.5em;
     }
+.collection__info {
+
+}
+    .collection__title {
+      font-size: 25px;
+      line-height: 1.5em;
+
+    }
 
     .soap__info-title {
       font-size: 25px;
