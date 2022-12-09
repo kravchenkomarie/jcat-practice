@@ -190,11 +190,12 @@ img {
 .main__page-title,
 .collection__title,
 .bestsellers__info h2,
-.blog h2 {
+.blog__main-title {
     color: var(--green-color);
 }
 
-.main__page-text, .collection__text {
+.main__page-text,
+.collection__text {
     color: var(--gray-color);
 }
 
@@ -305,7 +306,6 @@ img {
 
 /* soap section */
 
-
 .soap__info {
     background-image: url(../../assets/images/landing/background-dots-soap.png);
     background-color: var(--green-color);
@@ -406,15 +406,10 @@ img {
 
 /* blog section */
 
-.blog {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: center;*/
-    /*margin-bottom: 27.6em;*/
-}
-
-.blog h2 {
+.blog__main-title {
     font-size: 50px;
+    line-height: 54px;
+    font-weight: 600;
     text-transform: uppercase;
     padding: .3em;
 }
@@ -424,32 +419,39 @@ img {
 }
 
 .blog__post {
-    width: 26em;
-    height: 27em;
+    width: 371px;
+    height: 395px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin: 1.5em;
 }
 
-.blog__post img {
-    border-radius: 8px;
+.blog__post-image {
+    border-radius: 8px 8px 0 0;
 }
 
-.blog__post h3 {
-    width: 21em;
+.blog__post-title {
     color: var(--green-color);
     font-weight: 700;
     font-size: 20px;
-    line-height: 140%;
+    line-height: 28px;
     padding: 1em;
+}
+
+.blog__post-title:after {
+    content: '';
+    background-color: #F3F4F6;
+    height: 1px;
+    display: block;
+    margin-top: .5em;
 }
 
 .blog__post p {
     color: var(--dark-gray);
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
-    padding-left: 1.2em;
+    line-height: 24px;
+    padding: 0 1.2em;
 }
 
 /* footer */
@@ -541,7 +543,6 @@ footer:nth-of-type(1) {
         font-size: 10px;
         padding-right: 3em;
     }
-
 }
 
 @media (max-width: 992px) {
@@ -562,13 +563,11 @@ footer:nth-of-type(1) {
     }
 
     /* soap section */
+
     .soap__info-title {
         font-size: 40px;
         line-height: 50px;
     }
-
-    /*bestsellers section*/
-
 
 }
 
@@ -612,7 +611,6 @@ footer:nth-of-type(1) {
     }
 
 }
-
 
 @media (max-width: 576px) {
     .main__page-title {
@@ -708,15 +706,30 @@ footer:nth-of-type(1) {
        padding: 0 3em;
     }
 
+    .bestsellers__title {
+        font-size: 34px;
+    }
+
     .bestsellers__button {
-      width: 15em;
-
+      width: 8em;
     }
 
-    .bestsellers__card-image {
+.blog__main-title {
+    font-size: 30px;
+}
+ .blog__post {
+     width: 80%;
+     margin: auto;
+ }
 
+ .blog__post-title {
+     font-size: 20px;
+ }
 
-    }
+ .blog__post-text {
+     font-size: 15px;
+ }
+
 
 }
 
